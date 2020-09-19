@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    maven { url 'https://cloud.twometer.de/nexus/repository/maven-releases' }
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -30,6 +34,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'de.ebuchner.vocab:ebVocabCore:1.2.8@jar'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
