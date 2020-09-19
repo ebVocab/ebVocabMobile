@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+	
+	<color name="lightBlue">#ADD8E6</color>
+    <color name="lightRed">#FFC0CB</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="shadow">#EEEEEE</color>
+    <color name="moreShadow">#CCCCCC</color>
+
+    <color name="indiaOrange">#FF9933</color>
+    <color name="indiaBlue">#000088</color>
+    <color name="indiaGreen">#128807</color>
+</resources>

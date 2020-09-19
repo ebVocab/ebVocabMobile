@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/shadow"
+              android:padding="5dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/file_dir_label"
+        android:text="nui.file.dir.label"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:focusable="true"
+        android:layout_margin="3dp"
+        android:focusableInTouchMode="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_margin="3dp"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:id="@+id/file_dir"
+        android:enabled="false"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:id="@+id/file_dir_up"
+            android:text="nui.file.dir.up"
+            android:layout_margin="3dp"
+            android:enabled="false"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:id="@+id/file_dir_create"
+            android:text="nui.file.dir.create"
+            android:layout_margin="3dp"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:layout_margin="3dp"
+        android:id="@+id/file_sel_file_label"
+        android:text="nui.file.sel.file.label"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indiaBlue"
+        android:textSize="14sp"
+        android:layout_margin="3dp"
+        android:background="@color/white"
+        android:id="@+id/file_sel_file"
+        android:enabled="false"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:layout_margin="3dp"
+        android:id="@+id/file_dir_content_label"
+        android:text="nui.file.dir.zipContent.label"
+        />
+
+    <ListView
+        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:id="@+id/file_dir_content"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/file_ok"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/file_cancel"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

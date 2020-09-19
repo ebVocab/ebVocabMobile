@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/shadow"
+              android:padding="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/indiaBlue"
+                android:text="nui.analysis.input"
+                android:id="@+id/analysis_lbInput"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/white"
+                android:paddingLeft="7dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:id="@+id/analysis_tfInput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/indiaBlue"
+                android:text="nui.analysis.output"
+                android:id="@+id/analysis_lbOutput"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/white"
+                android:paddingLeft="7dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:id="@+id/analysis_tfOutput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/indiaBlue"
+                android:text="nui.analysis.unicode"
+                android:id="@+id/analysis_lbUnicode"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/indiaBlue"
+                android:layout_weight="1"
+                android:paddingLeft="7dp"
+                android:textSize="24sp"
+                android:inputType="text"
+                android:id="@+id/analysis_tfUnicode"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analysis_btnConvert"
+            android:text="nui.analysis.convert"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analysis_btnPaste"
+            android:text="nui.analysis.paste"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analysis_btnTranslate"
+            android:text="nui.analysis.translate"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analysis_btnClose"
+            android:text="nui.close"
+            />
+
+    </LinearLayout>
+</LinearLayout>

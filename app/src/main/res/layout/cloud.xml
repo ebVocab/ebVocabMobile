@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="5dp"
+              android:background="@color/white"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/indiaGreen"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:id="@+id/cloud_lbFileList"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/indiaBlue"
+            android:id="@+id/cloud_lbServerInfo"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cloud_rbDownStream"
+                android:checked="true"
+                android:textColor="@color/indiaBlue"
+                android:text="nui.cloud.stream.down"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cloud_rbUpStream"
+                android:textColor="@color/indiaBlue"
+                android:text="nui.cloud.stream.up"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cloud_btnRefresh"
+            android:text="nui.refresh"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/cloud_btnAllNone"
+            android:text="nui.cloud.all.none"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/cloud_btnTransfer"
+            android:text="nui.cloud.download"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cloud_lvFileList"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

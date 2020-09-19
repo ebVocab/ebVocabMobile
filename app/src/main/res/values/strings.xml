@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ebVocab</string>
+	<string name="http_www_ebuchner_de_vocab_app">http://www.ebuchner.de/vocab/app</string>
+</resources>

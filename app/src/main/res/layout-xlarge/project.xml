@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/project_root"
+              android:orientation="vertical"
+              android:padding="20dp"
+              android:background="@color/white"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+
+    <TextView
+        android:id="@+id/project_lbInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textSize="48sp"
+        android:text="nui.project.info"/>
+
+    <TextView
+        android:id="@+id/project_lbInfoVersion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="50dp"
+        android:textSize="16sp"
+        android:text="nui.project.info.version"/>
+
+    <TextView
+        android:id="@+id/project_lbSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textSize="24sp"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:text="nui.project.select"/>
+
+    <ListView
+        android:id="@+id/project_lvProjects"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:choiceMode="singleChoice"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/project_btnCreateProject"
+        android:layout_gravity="center_horizontal"
+        android:text="nui.project.crete"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

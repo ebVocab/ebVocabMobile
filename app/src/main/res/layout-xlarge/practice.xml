@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/practice_navButtons"
+        >
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/practice_spStrategy"
+            android:padding="5dp"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/practice_nav_reset_selector_36"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/practice_btnNavigationReset"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_backward_selector_36"
+            android:id="@+id/practice_btnNavigationBackward"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_next_selector_36"
+            android:id="@+id/practice_btnNavigationForward"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_reshuffle_random_selector_36"
+            android:id="@+id/practice_btnReshuffleRandom"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_reshuffle_statistics_selector_36"
+            android:id="@+id/practice_btnReshuffleStatistics"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_reshuffle_intense_selector_36"
+            android:id="@+id/practice_btnReshuffleIntense"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_nav_reshuffle_browse_selector_36"
+            android:id="@+id/practice_btnReshuffleBrowse"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_search_selector_36"
+            android:id="@+id/practice_btnSearch"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/practice_text_analyze_selector_36"
+            android:id="@+id/practice_btnTextAnalyze"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:id="@+id/practice_repButtons"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/practice_lbRepetitionMode"
+            android:padding="5dp"
+            android:textSize="24sp"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:text="nui.practice.repetition"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/practice_repetition_add_selector_36"
+            android:id="@+id/practice_btnRepetitionAdd"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/practice_repetition_remove_selector_36"
+            android:id="@+id/practice_btnRepetitionRemove"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/practice_repetition_clear_selector_36"
+            android:id="@+id/practice_btnRepetitionClear"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:src="@drawable/practice_repetition_load_selector_36"
+            android:id="@+id/practice_btnRepetitionLoad"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/practice_navButtons"
+        android:id="@+id/practice_divider"
+        android:orientation="horizontal"
+        android:background="@drawable/divider_shape"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/practice_divider"
+        android:id="@+id/practice_tableFields">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nui.practice.lesson"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/practice_tfLessonShowOption"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/practice_tfLesson"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:paddingLeft="20dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:background="@color/shadow"
+                android:textColor="@color/indiaBlue"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="1dp"
+                android:id="@+id/practice_lbForeign"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/practice_tfForeign"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:background="@color/shadow"
+                android:textColor="@color/indiaBlue"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/practice_lbType"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/practice_tfType"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/practice_lbUser"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/practice_tfUser"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="1dp"
+                android:id="@+id/practice_lbComment"/>
+
+            <TextView
+                android:layout_width="1000dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="28sp"
+                android:lines="4"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/practice_tfComment"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/practice_tableFields"
+        android:id="@+id/practice_divider2"
+        android:orientation="horizontal"
+        android:background="@drawable/divider_shape"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/practice_progress"
+        android:layout_below="@id/practice_divider2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/indiaBlue"
+            android:id="@+id/practice_lbStatus"/>
+
+        <ProgressBar
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/shadow"
+            android:progressDrawable="@drawable/practice_progressbar"
+            android:id="@+id/practice_progressPanel"/>
+    </LinearLayout>
+
+</RelativeLayout>

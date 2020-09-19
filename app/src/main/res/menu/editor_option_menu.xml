@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ed_open_projects"
+        android:showAsAction="ifRoom"
+        android:title="nui.menu.tools.project"/>
+    <item
+        android:id="@+id/ed_open_practice"
+        android:showAsAction="ifRoom"
+        android:title="nui.menu.tools.practice"/>
+
+    <item
+        android:showAsAction="ifRoom"
+        android:id="@+id/editor_file"
+        android:title="nui.menu.file"
+        >
+        <menu>
+            <item
+                android:id="@+id/editor_new"
+                android:title="nui.menu.file.new"
+                />
+            <item
+                android:id="@+id/editor_open"
+                android:title="nui.menu.file.open"
+                />
+            <item
+                android:id="@+id/editor_save"
+                android:title="nui.menu.file.save"
+                />
+            <item
+                android:id="@+id/editor_save_as"
+                android:title="nui.menu.file.save.as"
+                />
+            <item
+                android:id="@+id/editor_revert"
+                android:title="nui.menu.file.revert"
+                />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="5dp"
+              android:background="@color/white"
+              android:id="@+id/lessons_rightColumn"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lessons_lbHeaderDirectories"
+            android:text="nui.lessons.header.directories"
+            android:textColor="@color/white"
+            android:background="@color/indiaGreen"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="1dp"/>
+
+        <ListView
+            android:layout_height="100dp"
+            android:layout_width="fill_parent"
+            android:paddingLeft="1dp"
+            android:id="@+id/lessons_directorySelection"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.directories"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/lessons_lbSelectDirectories"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.all.directories"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/lessons_buttonSelectAllDirectories"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.no.directories"
+                android:id="@+id/lessons_buttonSelectNoDirectories"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lessons_lbHeaderFiles"
+            android:text="nui.lessons.header.files"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/white"
+            android:background="@color/indiaGreen"
+            android:padding="1dp"/>
+
+        <ListView
+            android:layout_height="100dp"
+            android:layout_width="fill_parent"
+            android:paddingLeft="1dp"
+            android:id="@+id/lessons_lessonSelection"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.files"
+                android:paddingRight="5dp"
+                android:textColor="@color/indiaBlue"
+                android:id="@+id/lessons_lbSelectFiles"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.all.files"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/lessons_buttonSelectAllFiles"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="nui.lesson.select.no.files"
+                android:id="@+id/lessons_buttonSelectNoFiles"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="nui.ok"
+            android:id="@+id/lessons_buttonOk"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="nui.cancel"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lessons_buttonCancel"/>
+    </LinearLayout>
+</LinearLayout>
+

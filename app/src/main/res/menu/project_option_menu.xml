@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/prj_open_cloud"
+        android:title="nui.project.cloud"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/prj_reset"
+        android:title="nui.project.reset"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/prj_open_about"
+        android:title="nui.menu.tools.about"
+        android:showAsAction="ifRoom"/>
+
+</menu>

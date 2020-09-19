@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/projectCreate_layout"
+              android:orientation="vertical"
+              android:background="@color/shadow"
+              android:layout_gravity="center"
+              android:padding="10dp"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectCreate_lbLanguage"
+        android:text="nui.project.create.language"
+        android:textColor="@color/white"
+        android:background="@color/indiaGreen"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"/>
+
+    <ListView
+        android:id="@+id/projectCreate_lvLanguage"
+        android:layout_width="600dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="250dp"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/projectCreate_tvName"
+            android:padding="5dp"
+            android:textColor="@color/indiaBlue"
+            android:text="nui.project.create.name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/projectCreate_etName"
+            android:padding="5dp"
+            android:hint="nui.project.create.name.hint"
+            android:textColorHint="@color/shadow"
+            android:background="@color/white"
+            android:textColor="@color/indiaBlue"
+            android:layout_marginLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/projectCreate_btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="nui.ok"/>
+
+        <Button
+            android:id="@+id/projectCreate_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="nui.cancel"/>
+    </LinearLayout>
+</LinearLayout>

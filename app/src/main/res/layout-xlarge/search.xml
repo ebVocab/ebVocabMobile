@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/shadow"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/indiaBlue"
+            android:text="nui.search.text.to.find"
+            android:textSize="24sp"
+            android:id="@+id/search_lbSearch"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/indiaBlue"
+            android:background="@color/white"
+            android:layout_marginLeft="7dp"
+            android:inputType="text"
+            android:textSize="24sp"
+            android:ems="10"
+            android:id="@+id/search_etSearch"/>
+
+        <Button
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.button"
+            android:textSize="24sp"
+            android:id="@+id/search_btnSearch"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.option.case.sensitive"
+            android:id="@+id/search_cbCaseSensitive"
+            android:textColor="@color/indiaBlue"
+            android:textSize="24sp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.option.whole.words"
+            android:textColor="@color/indiaBlue"
+            android:id="@+id/search_cbWholeWords"
+            android:textSize="24sp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.option.regular.expressions"
+            android:textColor="@color/indiaBlue"
+            android:id="@+id/search_cbRegEx"
+            android:textSize="24sp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.option.comments"
+            android:textColor="@color/indiaBlue"
+            android:id="@+id/search_cbComments"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_height="350dp"
+        android:layout_width="fill_parent"
+        android:textSize="24sp"
+        android:paddingLeft="7dp"
+        android:id="@+id/search_lvResult"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.search.edit.result"
+            android:id="@+id/search_btnEditEntry"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nui.close"
+            android:id="@+id/search_btnClose"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

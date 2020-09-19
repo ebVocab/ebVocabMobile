@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editor_buttons"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editor_item_add_selector_24"
+            android:background="@color/white"
+            android:id="@+id/editor_btnAdd"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/editor_item_accept_selector_24"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:id="@+id/editor_btnAccept"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/editor_item_revert_selector_24"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:id="@+id/editor_btnRevert"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editor_buttons2"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/editor_item_delete_selector_24"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:id="@+id/editor_btnDelete"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/editor_item_up_selector_24"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:id="@+id/editor_btnUp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/editor_item_down_selector_24"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:id="@+id/editor_btnDown"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/editor_buttons"
+        android:id="@+id/editor_divider"
+        android:orientation="horizontal"
+        android:background="@drawable/divider_shape"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor_divider"
+        android:id="@+id/editor_tableFields">
+
+        <TableRow>
+
+            <!-- needs to be focusable to stop keyboard from appearing -->
+            <TextView
+                android:id="@+id/editor_lbForeign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/moreShadow"
+                android:background="@color/shadow"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:focusableInTouchMode="true"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:id="@+id/editor_tfForeign"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/editor_lbType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/shadow"
+                android:textColor="@color/moreShadow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="1dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:id="@+id/editor_tfType"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/shadow"
+                android:textColor="@color/moreShadow"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/editor_lbUser"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:id="@+id/editor_tfUser"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/moreShadow"
+                android:background="@color/shadow"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/editor_lbComment"
+                android:layout_gravity="top"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:lines="4"
+                android:gravity="top"
+                android:layout_weight="1"
+                android:textColor="@color/indiaBlue"
+                android:background="@color/shadow"
+                android:enabled="false"
+                android:id="@+id/editor_tfComment"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nui.editor.list.title"
+        android:id="@+id/editor_tfListTitle"
+        android:textColor="@color/indiaBlue"
+        android:background="@color/white"
+        android:layout_below="@id/editor_divider"
+        android:paddingBottom="10dp"
+        />
+
+    <ListView
+        android:layout_height="200dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/editor_tfListTitle"
+        android:visibility="gone"
+        android:id="@+id/editor_vocabList"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor_tableFields"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editor_btnSwapScreens"
+            android:text="nui.editor.show.list"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
